@@ -62,7 +62,7 @@ public class Venue {
     @Override
     public String toString() {
         return getName() +
-                "\nAddress: " + getAddress() +
+                "\n" + getAddress() +
                 ", " + getCity() +
                 ", " + getRegion() +
                 ", " + getCountry();

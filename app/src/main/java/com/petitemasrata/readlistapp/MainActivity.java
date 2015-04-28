@@ -1,8 +1,6 @@
-package com.petitemasrata.readlistapp.activities;
+package com.petitemasrata.readlistapp;
 
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.ActionBar;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;

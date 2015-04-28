@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/general_padding">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_title"
+        android:textStyle="bold"
+        android:textSize="@dimen/txt_title"
+        android:textColor="@color/black"
+        android:text="@string/dummy_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_date"
+        android:textColor="@color/red"
+        android:textSize="@dimen/txt_mini"
+        android:textStyle="italic"
+        android:text="@string/dummy_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_venue"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/txt_mini"
+        android:text="@string/dummy_text"
+        android:paddingRight="@dimen/margin_minimal" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_description"
+        android:textSize="@dimen/txt_normal"
+        android:textColor="@color/grey"
+        android:layout_marginTop="@dimen/general_padding"
+        android:text="@string/dummy_text" />
+
+    <Button
+        android:id="@+id/btn_link"
+        android:text="@string/txt_btn_link"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/btn_height"
+        android:layout_marginTop="@dimen/margin_minimal"
+        android:background="@color/green"
+        android:textColor="@color/white" />
+</LinearLayout>

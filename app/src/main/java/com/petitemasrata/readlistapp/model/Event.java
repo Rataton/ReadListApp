@@ -9,12 +9,14 @@ public class Event {
     String description;
     String date;
     Venue venue;
+    String urle;
 
-    public Event(String title, String description, String date, Venue venue) {
+    public Event(String title, String description, String date, Venue venue, String urle) {
         this.title = title;
         this.description = description;
         this.date = date;
         this.venue = venue;
+        this.urle = urle;
     }
 
     public String getTitle() {
@@ -49,11 +51,16 @@ public class Event {
         this.venue = venue;
     }
 
+    public String getUrle() {
+        return urle;
+    }
+
+    public void setUrle(String urle) {
+        this.urle = urle;
+    }
+
     @Override
     public String toString() {
-        return "Title: " + getTitle() +
-                "\nDescription: " + getDescription() +
-                "\nDate: " + getDate() +
-                "\nVenue: " + getVenue();
+        return "Title: " + getTitle();
     }
 }

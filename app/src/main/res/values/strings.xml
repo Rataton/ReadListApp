@@ -2,4 +2,7 @@
     <string name="app_name">Read List App</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="action_info">Info</string>
+    <string name="dummy_text">La lalala lalala la lalla a la</string>
+    <string name="txt_btn_link">VER +</string>
 </resources>

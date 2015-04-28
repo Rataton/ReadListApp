@@ -106,6 +106,7 @@ public class AsyncTaskRequest extends AsyncTask<String, Void, ArrayList<Event>>{
             String title = currentE.getString(Constant.TITLE_KEY);
             String description = currentE.getString(Constant.DESCRIPTION_KEY);
             String date = currentE.getString(Constant.DATE_KEY);
+            String url_e = currentE.getString(Constant.EVENT_URL_KEY);
 
             String name = currentE.getString(Constant.VENUE_KEY);
             String address = currentE.getString(Constant.ADDRESS_KEY);
@@ -114,7 +115,7 @@ public class AsyncTaskRequest extends AsyncTask<String, Void, ArrayList<Event>>{
             String country = currentE.getString(Constant.COUNTRY_KEY);
 
             Venue venue = new Venue(name, address, city, region, country);
-            Event event = new Event(title, description, date, venue);
+            Event event = new Event(title, description, date, venue, url_e);
 
             events.add(event);
         }
