@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.petitemasrata.readlistapp.adapters.EventAdapter;
 import com.petitemasrata.readlistapp.model.Event;
@@ -17,15 +18,14 @@ import com.petitemasrata.readlistapp.rest.AsyncTaskRequest;
 
 import java.util.ArrayList;
 
-/**
- * Created by irata on 28/04/15.
- */
-public class MainFragment extends Fragment implements AsyncTaskRequest.AsyncResponse{
+
+public class MainFragment extends Fragment implements AsyncTaskRequest.AsyncResponse {
 
     private ListView mListView;
     private ArrayList<Event> mItems;
     private EventAdapter mAdapter;
     private Context CONTEXT;
+
 
     public MainFragment() {
     }
@@ -65,10 +65,13 @@ public class MainFragment extends Fragment implements AsyncTaskRequest.AsyncResp
     @Override
     public void onResponse(ArrayList<Event> responseObject) {
         //mItems = new ArrayList<>();
+        mItems.addAll(responseObject);
+        /*
         for (Event event : responseObject){
             mItems.add(event);
             Log.i("Event", event.toString());
         }
+        */
         mListView.setAdapter(mAdapter);
     }
 
